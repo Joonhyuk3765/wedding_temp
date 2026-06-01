@@ -18,9 +18,9 @@
         끝에 도달하면 transition 없이 원본 슬라이드로 점프합니다.
      ------------------------------------------------------------------ */
   const GALLERY_PHOTOS = [
-    // 'gallery/photo1.jpg',
-    // 'gallery/photo2.jpg',
-    // 'gallery/photo3.jpg',
+       'gallery/photo1.jpg',
+       'gallery/photo2.jpg',
+       'gallery/photo3.jpg',
     // 'gallery/photo4.jpg',
     // 'gallery/photo5.jpg',
     // 'gallery/photo6.jpg',
