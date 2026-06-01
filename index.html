@@ -1,720 +1,303 @@
 <!DOCTYPE html>
 <html lang="ko">
 <head>
-<meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
-<title>김준혁 ♥ 고미진</title>
-<meta property="og:title" content="김준혁 ♥ 고미진의 결혼식에 초대합니다">
-<meta property="og:description" content="2026년 10월 25일 일요일 오후 12시 30분 · 노블발렌티 대치">
-<link rel="preconnect" href="https://fonts.googleapis.com">
-<link href="https://fonts.googleapis.com/css2?family=Noto+Serif+KR:wght@200;300;400&family=Cormorant+Garamond:ital,wght@0,300;0,400;1,300&family=Noto+Sans+KR:wght@300;400;500&display=swap" rel="stylesheet">
-<style>
-*,*::before,*::after{margin:0;padding:0;box-sizing:border-box}
-:root{
-  --cream:#F7F4EF;--warm:#FDFCF9;--charcoal:#1E1C19;
-  --stone:#6B6860;--pebble:#A09E99;--div:#E2DED8;--gold:#B8956A;
-}
-html{scroll-behavior:smooth}
-body{background:var(--cream);font-family:'Noto Sans KR',sans-serif;color:var(--charcoal);display:flex;justify-content:center}
-.wrap{width:100%;max-width:430px;min-height:100vh;background:var(--warm);overflow-x:hidden}
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no, viewport-fit=cover" />
+  <meta name="theme-color" content="#f5f1ea" />
+  <meta name="apple-mobile-web-app-capable" content="yes" />
+  <meta name="apple-mobile-web-app-status-bar-style" content="default" />
 
-/* HERO */
-.hero{background:var(--charcoal);min-height:100svh;display:flex;flex-direction:column;align-items:center;justify-content:center;padding:60px 40px;position:relative;overflow:hidden}
-.hgrid{position:absolute;inset:0;opacity:.04;background-image:repeating-linear-gradient(0deg,transparent,transparent 39px,#fff 39px,#fff 40px),repeating-linear-gradient(90deg,transparent,transparent 39px,#fff 39px,#fff 40px)}
-.crn{position:absolute;width:80px;height:80px;border-color:rgba(184,149,106,.35);border-style:solid}
-.crn.tl{top:28px;left:28px;border-width:1px 0 0 1px}
-.crn.tr{top:28px;right:28px;border-width:1px 1px 0 0}
-.crn.bl{bottom:28px;left:28px;border-width:0 0 1px 1px}
-.crn.br{bottom:28px;right:28px;border-width:0 1px 1px 0}
-.hcontent{position:relative;text-align:center;animation:fup 1.2s ease both}
-@keyframes fup{from{opacity:0;transform:translateY(24px)}to{opacity:1;transform:translateY(0)}}
-.eyebrow{font-family:'Cormorant Garamond',serif;font-size:13px;font-weight:300;letter-spacing:5px;color:var(--gold);text-transform:uppercase;margin-bottom:36px}
-.hnames{font-family:'Noto Serif KR',serif;font-weight:200;font-size:36px;color:#F7F4EF;line-height:1.5;letter-spacing:4px}
-.amp{font-family:'Cormorant Garamond',serif;font-style:italic;font-size:28px;color:var(--gold);display:block;margin:4px 0}
-.vline{width:1px;height:48px;background:linear-gradient(to bottom,transparent,var(--gold),transparent);margin:32px auto}
-.hdate{font-family:'Cormorant Garamond',serif;font-size:15px;font-weight:300;letter-spacing:3px;color:var(--pebble);line-height:2}
-.scrollhint{position:absolute;bottom:36px;left:50%;transform:translateX(-50%);display:flex;flex-direction:column;align-items:center;gap:8px;animation:bob 2.5s ease infinite}
-@keyframes bob{0%,100%{transform:translateX(-50%) translateY(0)}50%{transform:translateX(-50%) translateY(6px)}}
-.scrollhint span{font-size:9px;letter-spacing:3px;color:var(--pebble);text-transform:uppercase}
+  <!-- Open Graph (카카오톡 공유 시 미리보기) -->
+  <meta property="og:type" content="website" />
+  <meta property="og:title" content="준혁 ♥ 미진 결혼합니다" />
+  <meta property="og:description" content="2026년 10월 25일 일요일 12시 30분 · 노블발렌티 대치" />
+  <meta property="og:image" content="images/og-thumbnail.jpg" />
 
-/* TABS */
-.tab-nav{display:flex;background:var(--warm);border-bottom:1px solid var(--div);position:sticky;top:0;z-index:100}
-.tb{flex:1;padding:14px 2px;font-size:10px;letter-spacing:.8px;text-align:center;color:var(--pebble);background:none;border:none;border-bottom:2px solid transparent;cursor:pointer;font-family:'Noto Sans KR',sans-serif;transition:color .2s,border-color .2s}
-.tb.active{color:var(--charcoal);border-bottom:2px solid var(--gold)}
-.tp{display:none}.tp.active{display:block;animation:fup .3s ease}
+  <title>준혁 ♥ 미진 결혼합니다 | 2026.10.25</title>
 
-/* SECTION */
-.sec{padding:44px 28px;border-bottom:1px solid var(--div)}
-.sec:last-child{border-bottom:none}
-.slbl{font-family:'Cormorant Garamond',serif;font-size:11px;letter-spacing:4px;color:var(--gold);text-transform:uppercase;margin-bottom:24px}
+  <!-- Fonts: 본문은 부드러운 명조, 영문은 우아한 세리프 -->
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link
+    href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300;0,400;0,500;1,300&family=Gowun+Batang:wght@400;700&family=Noto+Serif+KR:wght@300;400;500;600&display=swap"
+    rel="stylesheet"
+  />
 
-/* GREETING */
-.greeting{font-family:'Noto Serif KR',serif;font-weight:300;font-size:14px;line-height:2.4;color:#3A3835;text-align:center}
-.cprow{display:flex;align-items:center;justify-content:center;gap:20px;margin-top:36px;padding-top:28px;border-top:1px solid var(--div)}
-.cpb{text-align:center}
-.cprole{font-size:10px;letter-spacing:2px;color:var(--pebble);margin-bottom:5px}
-.cpname{font-family:'Noto Serif KR',serif;font-weight:300;font-size:16px;letter-spacing:2px}
-.cpheart{font-family:'Cormorant Garamond',serif;font-style:italic;font-size:22px;color:var(--gold)}
-
-/* INFO */
-.inforow{display:flex;gap:16px;align-items:flex-start;padding:16px 0;border-bottom:1px solid var(--div)}
-.inforow:first-of-type{padding-top:0}
-.inforow:last-of-type{border-bottom:none;padding-bottom:0}
-.dot{width:6px;height:6px;border-radius:50%;background:var(--gold);margin-top:6px;flex-shrink:0}
-.ilbl{font-size:10px;letter-spacing:2px;color:var(--pebble);margin-bottom:4px;text-transform:uppercase}
-.ival{font-family:'Noto Serif KR',serif;font-weight:300;font-size:14px;line-height:1.7}
-.isub{font-size:12px;color:var(--stone);margin-top:2px}
-
-/* ── GRID GALLERY ── */
-.gallery-hint{font-size:12px;color:var(--stone);text-align:center;line-height:1.8;margin-bottom:20px}
-.photo-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:3px;margin-bottom:16px}
-.photo-cell{aspect-ratio:1;background:#EAE7E0;position:relative;overflow:hidden;cursor:pointer}
-.photo-cell img{width:100%;height:100%;object-fit:cover;display:block;transition:transform .3s ease}
-.photo-cell:hover img{transform:scale(1.05)}
-.photo-cell.empty{display:flex;align-items:center;justify-content:center;flex-direction:column;gap:6px}
-.photo-cell.empty .pnum{font-family:'Cormorant Garamond',serif;font-size:22px;font-weight:300;color:#C5C1BB}
-.photo-cell.empty .ptxt{font-size:9px;letter-spacing:1px;color:#B4B2A9}
-/* 첫 번째 셀 크게 (2x2) */
-.photo-cell.featured{grid-column:span 2;grid-row:span 2;aspect-ratio:auto}
-.photo-cell.featured img{height:100%;min-height:200px}
-.photo-cell.featured.empty{min-height:200px}
-/* 라이트박스 */
-.lightbox{position:fixed;inset:0;background:rgba(30,28,25,.95);z-index:999;display:none;align-items:center;justify-content:center;flex-direction:column}
-.lightbox.open{display:flex}
-.lb-img{max-width:90vw;max-height:80vh;object-fit:contain;border-radius:2px}
-.lb-close{position:absolute;top:20px;right:24px;font-size:28px;color:#A09E99;cursor:pointer;background:none;border:none;font-family:'Cormorant Garamond',serif;line-height:1}
-.lb-close:hover{color:#F7F4EF}
-.lb-nav{display:flex;gap:40px;margin-top:20px}
-.lb-arrow{background:none;border:1px solid rgba(255,255,255,.2);color:#F7F4EF;width:40px;height:40px;border-radius:50%;font-size:18px;cursor:pointer;display:flex;align-items:center;justify-content:center}
-.lb-arrow:hover{border-color:var(--gold);color:var(--gold)}
-.lb-counter{font-size:11px;letter-spacing:2px;color:var(--pebble);margin-top:12px}
-.gallery-note{font-size:11px;color:var(--pebble);line-height:1.8;text-align:center;margin-top:8px}
-
-/* MAP */
-.mapbox{width:100%;height:200px;background:#EAE7E0;border-radius:2px;overflow:hidden;margin-bottom:14px;position:relative;display:flex;align-items:center;justify-content:center}
-.mgrid{position:absolute;inset:0;background-image:linear-gradient(var(--div) 1px,transparent 1px),linear-gradient(90deg,var(--div) 1px,transparent 1px);background-size:30px 30px;opacity:.6}
-.mroad-h{position:absolute;height:12px;background:#fff;left:0;right:0;top:50%;transform:translateY(-50%);border-top:1px solid var(--div);border-bottom:1px solid var(--div)}
-.mroad-v{position:absolute;width:12px;background:#fff;top:0;bottom:0;left:40%;border-left:1px solid var(--div);border-right:1px solid var(--div)}
-.mpin{position:relative;z-index:2;display:flex;flex-direction:column;align-items:center}
-.mpin-h{width:34px;height:34px;background:var(--charcoal);border-radius:50% 50% 50% 0;transform:rotate(-45deg);display:flex;align-items:center;justify-content:center}
-.mpin-i{width:13px;height:13px;background:var(--warm);border-radius:50%;transform:rotate(45deg)}
-.mpin-l{margin-top:9px;background:var(--charcoal);color:#F7F4EF;font-size:10px;letter-spacing:1px;padding:4px 10px;border-radius:2px;white-space:nowrap}
-.maplink{display:flex;align-items:center;justify-content:center;gap:8px;width:100%;padding:12px;border:1px solid var(--div);border-radius:2px;background:transparent;font-size:12px;letter-spacing:1px;color:var(--stone);text-decoration:none;font-family:'Noto Sans KR',sans-serif;transition:background .2s}
-.maplink:hover{background:var(--cream)}
-.tport{display:flex;gap:14px;padding:14px 0;border-bottom:1px solid var(--div);align-items:flex-start}
-.tport:last-child{border-bottom:none;padding-bottom:0}
-.tico{width:30px;height:30px;border:1px solid var(--div);border-radius:50%;display:flex;align-items:center;justify-content:center;flex-shrink:0}
-.tico svg{width:13px;height:13px;stroke:var(--stone);fill:none;stroke-width:1.5}
-.tlbl{font-size:10px;letter-spacing:2px;color:var(--pebble);margin-bottom:3px;text-transform:uppercase}
-.tval{font-size:12px;color:var(--charcoal);line-height:1.7}
-
-/* ACCOUNT */
-.accard{background:var(--cream);border:1px solid var(--div);border-radius:2px;padding:18px 20px;margin-bottom:10px;position:relative}
-.acperson{font-size:10px;letter-spacing:2px;color:var(--gold);text-transform:uppercase;margin-bottom:8px}
-.acbank{font-size:11px;color:var(--stone);margin-bottom:3px}
-.acnum{font-family:'Cormorant Garamond',serif;font-size:19px;font-weight:300;color:var(--charcoal);letter-spacing:2px}
-.acholder{font-size:11px;color:var(--stone);margin-top:3px}
-.copybtn{position:absolute;right:16px;top:50%;transform:translateY(-50%);font-size:10px;letter-spacing:1px;color:var(--stone);background:var(--warm);border:1px solid var(--div);border-radius:2px;padding:5px 10px;cursor:pointer;font-family:'Noto Sans KR',sans-serif;transition:all .2s}
-.copybtn:hover{border-color:var(--gold);color:var(--gold)}
-.copybtn.done{border-color:#639922;color:#639922}
-.giftnote{font-size:11px;color:var(--pebble);line-height:1.8;padding:14px 0 0;text-align:center}
-
-/* ── GAME ── */
-.game-intro{font-size:13px;color:var(--stone);line-height:1.8;margin-bottom:20px;text-align:center}
-.ghud{display:flex;justify-content:space-between;align-items:flex-end;margin-bottom:10px}
-.ghud-score{font-family:'Cormorant Garamond',serif;font-size:28px;font-weight:300;color:var(--charcoal);line-height:1}
-.ghud-lbl{font-size:10px;letter-spacing:2px;color:var(--pebble);margin-bottom:3px}
-.ghud-best{font-size:13px;color:var(--pebble);font-family:'Cormorant Garamond',serif}
-.game-wrap{background:#1E1C19;border-radius:4px;overflow:hidden;margin-bottom:12px;position:relative}
-#gc{display:block;width:100%;touch-action:none}
-.gbtn{width:100%;padding:13px;background:var(--charcoal);color:#F7F4EF;border:none;border-radius:2px;font-size:12px;letter-spacing:2px;cursor:pointer;font-family:'Noto Sans KR',sans-serif;transition:background .2s;margin-bottom:8px}
-.gbtn:hover{background:#3A3835}
-.gtip{font-size:11px;color:var(--pebble);text-align:center;letter-spacing:1px;margin-bottom:20px}
-.rank-sec{margin-top:4px}
-.rank-input-row{display:flex;gap:8px;margin-bottom:16px}
-.rank-input{flex:1;padding:10px 13px;border:1px solid var(--div);border-radius:2px;background:var(--warm);font-size:13px;color:var(--charcoal);font-family:'Noto Sans KR',sans-serif;outline:none}
-.rank-input:focus{border-color:var(--gold)}
-.rank-sbtn{padding:10px 18px;background:var(--charcoal);color:#F7F4EF;border:none;border-radius:2px;font-size:11px;letter-spacing:1px;cursor:pointer;font-family:'Noto Sans KR',sans-serif;white-space:nowrap}
-.rank-item{display:flex;align-items:center;gap:12px;padding:10px 0;border-bottom:1px solid var(--div)}
-.rank-item:last-child{border-bottom:none}
-.rnum{font-family:'Cormorant Garamond',serif;font-size:18px;width:22px;text-align:center;color:var(--pebble)}
-.rnum.g{color:#B8956A}.rnum.s{color:#9BA3A8}.rnum.b{color:#B8875A}
-.rname{flex:1;font-size:13px;color:var(--charcoal)}
-.rscore{font-family:'Cormorant Garamond',serif;font-size:16px;color:var(--charcoal)}
-.rempty{text-align:center;padding:20px 0;font-size:12px;color:var(--pebble);letter-spacing:1px}
-
-/* GUESTBOOK */
-.gbtextarea{width:100%;padding:11px 13px;border:1px solid var(--div);border-radius:2px;background:var(--warm);font-size:13px;color:var(--charcoal);font-family:'Noto Sans KR',sans-serif;outline:none;resize:none;margin-bottom:8px}
-.gbtextarea:focus{border-color:var(--gold)}
-.gbrow{display:flex;gap:8px}
-.gbinput{flex:1;padding:10px 13px;border:1px solid var(--div);border-radius:2px;background:var(--warm);font-size:13px;color:var(--charcoal);font-family:'Noto Sans KR',sans-serif;outline:none}
-.gbinput:focus{border-color:var(--gold)}
-.gbbtn{padding:10px 18px;background:var(--charcoal);color:#F7F4EF;border:none;border-radius:2px;font-size:11px;letter-spacing:1px;cursor:pointer;font-family:'Noto Sans KR',sans-serif;white-space:nowrap}
-.gbbtn:hover{background:#3A3835}
-.gblist{margin-top:24px}
-.gbitem{padding:16px 0;border-bottom:1px solid var(--div)}
-.gbitem:last-child{border-bottom:none}
-.gbname{font-size:10px;letter-spacing:2px;color:var(--gold);margin-bottom:5px;text-transform:uppercase}
-.gbtext{font-family:'Noto Serif KR',serif;font-weight:300;font-size:13px;color:#3A3835;line-height:1.9}
-.gbtime{font-size:10px;color:var(--pebble);margin-top:4px}
-.gbempty{text-align:center;padding:28px 0;font-size:12px;color:var(--pebble);letter-spacing:1px}
-
-/* FOOTER */
-.footer{background:var(--charcoal);padding:44px 28px;text-align:center}
-.fnames{font-family:'Cormorant Garamond',serif;font-style:italic;font-size:22px;font-weight:300;color:#F7F4EF;letter-spacing:2px;margin-bottom:14px}
-.fdate{font-size:11px;letter-spacing:3px;color:var(--pebble)}
-</style>
+  <link rel="stylesheet" href="styles.css" />
 </head>
 <body>
-<div class="wrap">
 
-<!-- HERO -->
-<section class="hero">
-  <div class="hgrid"></div>
-  <div class="crn tl"></div><div class="crn tr"></div><div class="crn bl"></div><div class="crn br"></div>
-  <div class="hcontent">
-    <div class="eyebrow">Wedding Invitation</div>
-    <div class="hnames">김준혁<span class="amp">&amp;</span>고미진</div>
-    <div class="vline"></div>
-    <div class="hdate">2026. 10. 25. SUN<br>오후 12시 30분<br>노블발렌티 대치</div>
-  </div>
-  <div class="scrollhint">
-    <span>Scroll</span>
-    <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="#A09E99" stroke-width="1.5"><polyline points="6 9 12 15 18 9"/></svg>
-  </div>
-</section>
-
-<!-- TAB NAV -->
-<nav class="tab-nav">
-  <button class="tb active" onclick="sw('info')">안내</button>
-  <button class="tb" onclick="sw('gallery')">갤러리</button>
-  <button class="tb" onclick="sw('map')">오시는 길</button>
-  <button class="tb" onclick="sw('gift')">축의금</button>
-  <button class="tb" onclick="sw('game')">게임</button>
-  <button class="tb" onclick="sw('book')">방명록</button>
-</nav>
-
-<!-- TAB: 안내 -->
-<div id="tp-info" class="tp active">
-  <div class="sec">
-    <div class="slbl">Greeting</div>
-    <div class="greeting">저희 두 사람이<br>한 길을 함께 걷기로 하였습니다.<br><br>바쁘신 중에도 오셔서<br>자리를 빛내 주시면<br>더없는 기쁨이겠습니다.</div>
-    <div class="cprow">
-      <div class="cpb"><div class="cprole">신랑</div><div class="cpname">김준혁</div></div>
-      <div class="cpheart">&hearts;</div>
-      <div class="cpb"><div class="cprole">신부</div><div class="cpname">고미진</div></div>
+  <!-- ============================================== -->
+  <!-- 1. COVER: 첫 페이지 - 핵심 정보 모두 포함        -->
+  <!-- ============================================== -->
+  <section class="cover" id="cover">
+    <div class="cover__ornament cover__ornament--top">
+      <svg viewBox="0 0 100 20" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
+        <path d="M0 10 L40 10" stroke="currentColor" stroke-width="0.4" fill="none"/>
+        <circle cx="50" cy="10" r="1.2" fill="currentColor"/>
+        <path d="M60 10 L100 10" stroke="currentColor" stroke-width="0.4" fill="none"/>
+        <path d="M45 5 Q50 0 55 5 Q50 10 45 5 Z M45 15 Q50 20 55 15 Q50 10 45 15 Z" fill="currentColor" opacity="0.6"/>
+      </svg>
     </div>
-  </div>
-  <div class="sec">
-    <div class="slbl">예식 안내</div>
-    <div class="inforow"><div class="dot"></div><div><div class="ilbl">날짜 · 시간</div><div class="ival">2026년 10월 25일 일요일</div><div class="isub">오후 12시 30분</div></div></div>
-    <div class="inforow"><div class="dot"></div><div><div class="ilbl">장소</div><div class="ival">노블발렌티 대치</div><div class="isub">서울특별시 강남구 대치동</div></div></div>
-  </div>
-</div>
 
-<!-- TAB: 갤러리 -->
-<div id="tp-gallery" class="tp">
-  <div class="sec">
-    <div class="slbl">Gallery</div>
-    <div class="gallery-hint">저희의 소중한 순간들을 담았습니다<br>사진을 탭하면 크게 볼 수 있어요</div>
+    <p class="cover__date-eng">25 · OCTOBER · 2026</p>
 
-    <!--
-      ★ 사진 추가 방법 ★
-      1. 사진 파일(photo1.jpg 등)을 index.html과 같은 폴더에 업로드
-      2. <div class="photo-cell empty"> 를 아래처럼 교체:
-         <div class="photo-cell" onclick="openLb(인덱스번호)">
-           <img src="photo1.jpg" alt="웨딩사진">
-         </div>
-      3. PHOTOS 배열에도 해당 파일명 추가 (아래 JS 참고)
-    -->
-    <div class="photo-grid" id="photo-grid">
-      <!-- featured (2x2) -->
-      <div class="photo-cell featured empty" onclick="openLb(0)">
-        <div class="pnum">01</div><div class="ptxt">메인 사진</div>
+    <h1 class="cover__names">
+      <span class="cover__name">준혁</span>
+      <span class="cover__amp">&amp;</span>
+      <span class="cover__name">미진</span>
+    </h1>
+
+    <p class="cover__korean">결혼합니다</p>
+
+    <div class="cover__divider" aria-hidden="true"></div>
+
+    <!-- 핵심 정보 카드: 날짜 & 장소 -->
+    <div class="cover__keyinfo">
+      <div class="keyinfo__row">
+        <span class="keyinfo__label">날짜</span>
+        <span class="keyinfo__value">2026년 10월 25일 일요일</span>
+        <span class="keyinfo__sub">오후 12시 30분</span>
       </div>
-      <!-- 나머지 1x1 -->
-      <div class="photo-cell empty" onclick="openLb(1)"><div class="pnum">02</div></div>
-      <div class="photo-cell empty" onclick="openLb(2)"><div class="pnum">03</div></div>
-      <div class="photo-cell empty" onclick="openLb(3)"><div class="pnum">04</div></div>
-      <div class="photo-cell empty" onclick="openLb(4)"><div class="pnum">05</div></div>
-      <div class="photo-cell empty" onclick="openLb(5)"><div class="pnum">06</div></div>
-      <div class="photo-cell empty" onclick="openLb(6)"><div class="pnum">07</div></div>
-      <div class="photo-cell empty" onclick="openLb(7)"><div class="pnum">08</div></div>
-      <div class="photo-cell empty" onclick="openLb(8)"><div class="pnum">09</div></div>
-    </div>
-    <div class="gallery-note">
-      📌 사진 교체 방법은 index.html 주석을 참고해주세요
-    </div>
-  </div>
-</div>
-
-<!-- 라이트박스 -->
-<div class="lightbox" id="lightbox" onclick="closeLb()">
-  <button class="lb-close" onclick="closeLb()">&#215;</button>
-  <img class="lb-img" id="lb-img" src="" alt="">
-  <div class="lb-nav" onclick="event.stopPropagation()">
-    <button class="lb-arrow" onclick="lbNav(-1)">&#8249;</button>
-    <button class="lb-arrow" onclick="lbNav(1)">&#8250;</button>
-  </div>
-  <div class="lb-counter" id="lb-counter"></div>
-</div>
-
-<!-- TAB: 오시는 길 -->
-<div id="tp-map" class="tp">
-  <div class="sec">
-    <div class="slbl">오시는 길</div>
-    <div class="mapbox">
-      <div class="mgrid"></div><div class="mroad-h"></div><div class="mroad-v"></div>
-      <div class="mpin"><div class="mpin-h"><div class="mpin-i"></div></div><div class="mpin-l">노블발렌티 대치</div></div>
-    </div>
-    <a class="maplink" href="https://map.kakao.com/?q=노블발렌티+대치" target="_blank">
-      <svg width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M12 2C8.13 2 5 5.13 5 9c0 5.25 7 13 7 13s7-7.75 7-13c0-3.87-3.13-7-7-7z"/><circle cx="12" cy="9" r="2.5"/></svg>
-      카카오맵으로 보기
-    </a>
-    <div style="margin-top:24px">
-      <div class="tport"><div class="tico"><svg viewBox="0 0 24 24"><rect x="5" y="2" width="14" height="20" rx="3"/><line x1="9" y1="6" x2="15" y2="6"/><circle cx="12" cy="16" r="2"/></svg></div><div><div class="tlbl">지하철</div><div class="tval">3호선 대치역 1번 출구 · 도보 5분</div></div></div>
-      <div class="tport"><div class="tico"><svg viewBox="0 0 24 24"><path d="M5 17H3a2 2 0 0 1-2-2V5a2 2 0 0 1 2-2h11a2 2 0 0 1 2 2v3"/><circle cx="16" cy="17" r="3"/><circle cx="6" cy="17" r="3"/><path d="M14 8h4l4 5"/></svg></div><div><div class="tlbl">주차</div><div class="tval">건물 내 주차 가능 (웨딩홀 이용 시 무료)</div></div></div>
-      <div class="tport"><div class="tico"><svg viewBox="0 0 24 24"><polyline points="22 12 18 12 15 21 9 3 6 12 2 12"/></svg></div><div><div class="tlbl">버스</div><div class="tval">대치역 정류장 하차<br>간선 140, 401 · 지선 3420</div></div></div>
-    </div>
-  </div>
-</div>
-
-<!-- TAB: 축의금 -->
-<div id="tp-gift" class="tp">
-  <div class="sec">
-    <div class="slbl">마음 전하기</div>
-    <div class="accard">
-      <div class="acperson">신랑 · Groom</div>
-      <div class="acbank">우리은행</div>
-      <div class="acnum">1002-396-940904</div>
-      <div class="acholder">예금주 김준혁</div>
-      <button class="copybtn" id="c1" onclick="copyA('c1','1002-396-940904')">복사</button>
-    </div>
-    <div class="accard" style="opacity:.55">
-      <div class="acperson">신부 · Bride</div>
-      <div class="acbank">은행명</div>
-      <div class="acnum">계좌번호를 입력해주세요</div>
-      <div class="acholder">예금주 고미진</div>
-      <button class="copybtn" disabled style="cursor:default;opacity:.4">복사</button>
-    </div>
-    <div class="giftnote">마음만으로도 충분히 감사합니다.<br>참석이 어려우신 분들을 위해 안내드립니다.</div>
-  </div>
-</div>
-
-<!-- TAB: 게임 -->
-<div id="tp-game" class="tp">
-  <div class="sec">
-    <div class="slbl">Mini Game</div>
-    <div class="game-intro">신랑신부가 함께 달립니다!<br>웨딩케이크 장애물을 피해보세요 🎂</div>
-    <div class="ghud">
-      <div><div class="ghud-lbl">SCORE</div><div class="ghud-score" id="gdisplay">0</div></div>
-      <div style="text-align:right"><div class="ghud-lbl">BEST</div><div class="ghud-best" id="gbest">0</div></div>
-    </div>
-    <div class="game-wrap"><canvas id="gc" tabindex="0"></canvas></div>
-    <button class="gbtn" id="gbtnEl" onclick="startGame()">시작하기</button>
-    <div class="gtip" id="gtip">탭 · 클릭 · 스페이스바로 점프!</div>
-
-    <div class="rank-sec" id="rank-sec" style="display:none">
-      <div class="slbl" style="margin-bottom:12px">이름 등록</div>
-      <div class="rank-input-row">
-        <input class="rank-input" id="ri" placeholder="이름 입력" maxlength="8">
-        <button class="rank-sbtn" onclick="saveRank()">등록</button>
+      <div class="keyinfo__row">
+        <span class="keyinfo__label">장소</span>
+        <span class="keyinfo__value">노블발렌티 대치</span>
+        <span class="keyinfo__sub">서울 강남구 영동대로 325, S-TOWER</span>
       </div>
-      <div class="slbl" style="margin-bottom:12px">랭킹</div>
-      <div id="rlist"></div>
     </div>
-  </div>
-</div>
 
-<!-- TAB: 방명록 -->
-<div id="tp-book" class="tp">
-  <div class="sec">
-    <div class="slbl">축하 메시지</div>
-    <textarea class="gbtextarea" id="gbmsg" rows="3" placeholder="두 분의 새 출발을 진심으로 축하합니다..." maxlength="200"></textarea>
-    <div class="gbrow">
-      <input class="gbinput" id="gbname" placeholder="이름" maxlength="10">
-      <button class="gbbtn" onclick="sendMsg()">전송</button>
+    <!-- 약도 이미지 (첫 페이지 안에 작은 미리보기) -->
+    <div class="cover__map">
+      <img src="images/map-1.jpg" alt="노블발렌티 대치 약도" loading="eager" />
+      <a href="#location" class="map__more">자세히 보기 →</a>
     </div>
-    <div class="gblist" id="gblist"></div>
-  </div>
-</div>
 
-<footer class="footer">
-  <div class="fnames">Joonhyuk &amp; Mijin</div>
-  <div class="fdate">2026 · 10 · 25</div>
-</footer>
+    <!-- 계좌번호 (펼침/접힘) -->
+    <details class="cover__account">
+      <summary>
+        <span>마음 전하실 곳</span>
+        <span class="account__chevron" aria-hidden="true">＋</span>
+      </summary>
+      <div class="account__panel">
+        <div class="account__card">
+          <p class="account__role">신랑측</p>
+          <p class="account__bank">우리은행</p>
+          <p class="account__number" data-account="1002396940904">
+            <span>1002-396-940904</span>
+            <button type="button" class="account__copy" data-copy="1002396940904" aria-label="신랑 계좌번호 복사">복사</button>
+          </p>
+        </div>
+        <div class="account__card">
+          <p class="account__role">신부측</p>
+          <p class="account__bank">케이뱅크</p>
+          <p class="account__number" data-account="100131069461">
+            <span>100-131-069461</span>
+            <button type="button" class="account__copy" data-copy="100131069461" aria-label="신부 계좌번호 복사">복사</button>
+          </p>
+        </div>
+      </div>
+    </details>
 
-<script>
-/* ── TABS ── */
-const TABS = ['info','gallery','map','gift','game','book'];
-function sw(t) {
-  document.querySelectorAll('.tb').forEach((b,i) => b.classList.toggle('active', TABS[i]===t));
-  document.querySelectorAll('.tp').forEach(p => p.classList.remove('active'));
-  document.getElementById('tp-'+t).classList.add('active');
-  window.scrollTo({top: document.querySelector('.tab-nav').offsetTop - 1, behavior:'smooth'});
-}
+    <div class="cover__scroll" aria-hidden="true">
+      <span></span>
+    </div>
+  </section>
 
-/* ── GALLERY LIGHTBOX ── */
-// ★ 사진 추가 시 여기에 파일 경로 추가
-const PHOTOS = [
-  null, null, null, null, null, null, null, null, null
-  // 예: 'photo1.jpg', 'photo2.jpg', ...
-];
-let lbIdx = 0;
-function openLb(i) {
-  if(!PHOTOS[i]) return;
-  lbIdx = i;
-  document.getElementById('lb-img').src = PHOTOS[i];
-  document.getElementById('lb-counter').textContent = (i+1) + ' / ' + PHOTOS.filter(Boolean).length;
-  document.getElementById('lightbox').classList.add('open');
-  document.body.style.overflow = 'hidden';
-}
-function closeLb() {
-  document.getElementById('lightbox').classList.remove('open');
-  document.body.style.overflow = '';
-}
-function lbNav(dir) {
-  const valid = PHOTOS.map((p,i)=>p?i:null).filter(i=>i!==null);
-  if(!valid.length) return;
-  const cur = valid.indexOf(lbIdx);
-  lbIdx = valid[(cur + dir + valid.length) % valid.length];
-  document.getElementById('lb-img').src = PHOTOS[lbIdx];
-  document.getElementById('lb-counter').textContent = (valid.indexOf(lbIdx)+1) + ' / ' + valid.length;
-}
+  <!-- ============================================== -->
+  <!-- 2. GREETING: 인사말                              -->
+  <!-- ============================================== -->
+  <section class="section greeting">
+    <p class="section__eng">INVITATION</p>
+    <h2 class="section__title">초대합니다</h2>
+    <div class="section__line" aria-hidden="true"></div>
+    <p class="greeting__body">
+      서로가 마주보며 다져온 사랑을<br/>
+      이제 함께 한 곳을 바라보며<br/>
+      걸어갈 수 있는 큰 사랑으로 키우고자 합니다.
+    </p>
+    <p class="greeting__body">
+      저희 두 사람이 사랑의 이름으로<br/>
+      지켜나갈 수 있게<br/>
+      앞날을 축복해 주시면 감사하겠습니다.
+    </p>
 
-/* ── COPY ACCOUNT ── */
-function copyA(id, txt) {
-  navigator.clipboard.writeText(txt).finally(() => {
-    const b = document.getElementById(id);
-    b.textContent = '완료'; b.classList.add('done');
-    setTimeout(() => { b.textContent = '복사'; b.classList.remove('done'); }, 2000);
-  });
-}
+    <div class="greeting__families">
+      <p><span class="family__parents">○○○ · ○○○</span>의 아들 <span class="family__name">준혁</span></p>
+      <p><span class="family__parents">○○○ · ○○○</span>의 딸 <span class="family__name">미진</span></p>
+    </div>
+  </section>
 
-/* ── GUESTBOOK ── */
-let msgs = [];
-function renderMsgs() {
-  const c = document.getElementById('gblist');
-  if(!msgs.length) { c.innerHTML='<div class="gbempty">첫 번째 메시지를 남겨주세요</div>'; return; }
-  c.innerHTML = msgs.map(m=>`<div class="gbitem"><div class="gbname">${m.name}</div><div class="gbtext">${m.text}</div><div class="gbtime">${m.time}</div></div>`).join('');
-}
-function sendMsg() {
-  const name = document.getElementById('gbname').value.trim();
-  const text = document.getElementById('gbmsg').value.trim();
-  if(!name||!text) return;
-  const now = new Date();
-  msgs.unshift({name, text, time: now.getHours()+':'+String(now.getMinutes()).padStart(2,'0')});
-  document.getElementById('gbname').value = '';
-  document.getElementById('gbmsg').value = '';
-  renderMsgs();
-}
-renderMsgs();
+  <!-- ============================================== -->
+  <!-- 3. GALLERY: 사진 갤러리 (무한 반복 슬라이더)      -->
+  <!-- ============================================== -->
+  <section class="section gallery" id="gallery">
+    <p class="section__eng">OUR MOMENTS</p>
+    <h2 class="section__title">우리의 순간</h2>
+    <div class="section__line" aria-hidden="true"></div>
 
-/* ════════════════════════════════════
-   COUPLE RUN GAME
-════════════════════════════════════ */
-const canvas = document.getElementById('gc');
-const ctx = canvas.getContext('2d');
-let W, H, GY; // ground Y
+    <div class="slider" id="slider">
+      <div class="slider__track" id="sliderTrack">
+        <!-- 슬라이드는 JS에서 동적으로 생성 (무한 반복용 복제 포함) -->
+      </div>
 
-function resize() {
-  W = canvas.parentElement.clientWidth;
-  H = Math.round(W * 0.48);
-  canvas.width = W;
-  canvas.height = H;
-  GY = H * 0.76; // ground line
-}
-resize();
-window.addEventListener('resize', () => { resize(); if(!running) idle(); });
+      <button type="button" class="slider__btn slider__btn--prev" id="prevBtn" aria-label="이전 사진">
+        <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M15 6 L9 12 L15 18" stroke="currentColor" stroke-width="1.5" fill="none" stroke-linecap="round" stroke-linejoin="round"/></svg>
+      </button>
+      <button type="button" class="slider__btn slider__btn--next" id="nextBtn" aria-label="다음 사진">
+        <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M9 6 L15 12 L9 18" stroke="currentColor" stroke-width="1.5" fill="none" stroke-linecap="round" stroke-linejoin="round"/></svg>
+      </button>
 
-let running=false, dead=false;
-let score=0, frame=0, spd=0;
-let best = parseInt(localStorage.getItem('wbest')||'0');
-let rankings = JSON.parse(localStorage.getItem('wrank')||'[]');
-let lastScore = 0;
-let raf;
+      <div class="slider__counter">
+        <span id="currentSlide">1</span>
+        <span class="slider__counter-sep">/</span>
+        <span id="totalSlides">6</span>
+      </div>
+    </div>
 
-document.getElementById('gbest').textContent = best;
+    <div class="slider__dots" id="sliderDots"></div>
+  </section>
 
-// player state
-let py, pvy, pJump, legPh;
-const PX = () => W*0.18;
-const PW = () => W*0.17;
-const PH = () => H*0.40;
+  <!-- ============================================== -->
+  <!-- 4. CALENDAR: 달력                                -->
+  <!-- ============================================== -->
+  <section class="section calendar-section">
+    <p class="section__eng">WHEN</p>
+    <h2 class="section__title">예식일</h2>
+    <div class="section__line" aria-hidden="true"></div>
 
-function initPlayer() {
-  py = GY; pvy = 0; pJump = false; legPh = 0;
-}
+    <div class="calendar">
+      <p class="calendar__month">OCTOBER 2026</p>
+      <table class="calendar__table" aria-label="2026년 10월 달력">
+        <thead>
+          <tr>
+            <th class="cal--sun">SUN</th>
+            <th>MON</th>
+            <th>TUE</th>
+            <th>WED</th>
+            <th>THU</th>
+            <th>FRI</th>
+            <th>SAT</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr><td></td><td></td><td></td><td></td><td>1</td><td>2</td><td>3</td></tr>
+          <tr><td class="cal--sun">4</td><td>5</td><td>6</td><td>7</td><td>8</td><td>9</td><td>10</td></tr>
+          <tr><td class="cal--sun">11</td><td>12</td><td>13</td><td>14</td><td>15</td><td>16</td><td>17</td></tr>
+          <tr><td class="cal--sun">18</td><td>19</td><td>20</td><td>21</td><td>22</td><td>23</td><td>24</td></tr>
+          <tr><td class="cal--sun cal--day"><span>25</span></td><td>26</td><td>27</td><td>28</td><td>29</td><td>30</td><td>31</td></tr>
+        </tbody>
+      </table>
+      <p class="calendar__time">2026년 10월 25일 일요일 오후 12시 30분</p>
+      <div class="countdown" id="countdown" aria-live="polite"></div>
+    </div>
+  </section>
 
-// obstacles
-let obs = [];
+  <!-- ============================================== -->
+  <!-- 5. LOCATION: 오시는 길                           -->
+  <!-- ============================================== -->
+  <section class="section location" id="location">
+    <p class="section__eng">LOCATION</p>
+    <h2 class="section__title">오시는 길</h2>
+    <div class="section__line" aria-hidden="true"></div>
 
-function jump() {
-  if(!running || dead) return;
-  if(!pJump) { pvy = -(H * 0.032); pJump = true; }
-}
+    <div class="location__map">
+      <img src="images/map-1.jpg" alt="노블발렌티 대치 약도" loading="lazy" />
+    </div>
 
-canvas.addEventListener('click', jump);
-canvas.addEventListener('touchstart', e => { e.preventDefault(); jump(); }, {passive:false});
-document.addEventListener('keydown', e => { if(e.code==='Space'){ e.preventDefault(); jump(); } });
+    <div class="location__info">
+      <h3 class="location__venue">노블발렌티 대치</h3>
+      <p class="location__address">서울 강남구 영동대로 325, S-TOWER<br/>(대치동 983-1)</p>
+      <p class="location__tel"><a href="tel:0225390400">02-539-0400</a></p>
 
-function startGame() {
-  if(running) return;
-  running=true; dead=false; score=0; frame=0; spd=4;
-  obs=[]; initPlayer();
-  document.getElementById('gdisplay').textContent='0';
-  document.getElementById('gbtnEl').textContent='달리는 중... (탭/클릭/스페이스바 점프)';
-  document.getElementById('rank-sec').style.display='none';
-  document.getElementById('gtip').textContent='탭 · 클릭 · 스페이스바로 점프!';
-  cancelAnimationFrame(raf);
-  loop();
-}
+      <div class="location__nav">
+        <a href="https://map.naver.com/p/search/노블발렌티 대치" target="_blank" rel="noopener" class="nav__btn">
+          네이버지도
+        </a>
+        <a href="https://map.kakao.com/?q=노블발렌티 대치" target="_blank" rel="noopener" class="nav__btn">
+          카카오맵
+        </a>
+        <a href="https://www.tmap.co.kr/tmap2/mobile/route.jsp?name=노블발렌티 대치&lon=127.0612&lat=37.4979" target="_blank" rel="noopener" class="nav__btn">
+          티맵
+        </a>
+      </div>
+    </div>
 
-function loop() {
-  update(); draw();
-  if(!dead) raf = requestAnimationFrame(loop);
-  else endGame();
-}
+    <div class="transport">
+      <div class="transport__item">
+        <p class="transport__label"><span class="transport__icon">🚇</span>지하철</p>
+        <p class="transport__body">
+          <strong>2호선 삼성역 3번 출구</strong> 도보 10분<br/>
+          <span class="transport__sub">삼성역 3번출구 앞 셔틀버스 5-10분 간격 운행</span>
+        </p>
+      </div>
 
-function update() {
-  frame++; score++;
-  spd = 4 + score/700;
+      <div class="transport__item">
+        <p class="transport__label"><span class="transport__icon">🚌</span>버스</p>
+        <p class="transport__body">
+          <strong>휘문고 / 대치2동 주민센터</strong> 하차<br/>
+          <span class="transport__sub">
+            간선 343, 401 / 지선 4318, 4319<br/>
+            일반 11-3, 917 / 직행 500-2, 9407, 9507, 9607
+          </span>
+        </p>
+      </div>
 
-  // physics
-  pvy += H * 0.0014;
-  py += pvy;
-  if(py >= GY) { py=GY; pvy=0; pJump=false; }
-  legPh += pJump ? 0 : 0.28;
+      <div class="transport__item">
+        <p class="transport__label"><span class="transport__icon">🅿️</span>주차</p>
+        <p class="transport__body">
+          <strong>2시간 무료 주차</strong>
+        </p>
+      </div>
+    </div>
+  </section>
 
-  // spawn cake obstacles
-  const lastX = obs.length ? obs[obs.length-1].x : -999;
-  const gap = Math.max(70, 180 - score/30);
-  if(W - lastX > gap + Math.random()*90) {
-    const oh = H*(0.13 + Math.random()*0.13);
-    obs.push({ x: W+20, w: W*0.05, h: oh, y: GY - oh });
-  }
-  obs.forEach(o => o.x -= spd);
-  obs = obs.filter(o => o.x + o.w > -5);
+  <!-- ============================================== -->
+  <!-- 6. ACCOUNT (다시): 마음 전하실 곳 (상세)         -->
+  <!-- ============================================== -->
+  <section class="section account-section">
+    <p class="section__eng">CONGRATULATIONS</p>
+    <h2 class="section__title">마음 전하실 곳</h2>
+    <div class="section__line" aria-hidden="true"></div>
 
-  // collision (with padding)
-  const pad = 6;
-  const px1=PX()-PW()*0.5+pad, px2=PX()+PW()*0.5-pad;
-  const py1=py-PH()+pad, py2=py-pad;
-  for(const o of obs) {
-    if(px2>o.x && px1<o.x+o.w && py2>o.y && py1<o.y+o.h) { dead=true; return; }
-  }
+    <p class="account-section__intro">
+      축하의 마음을 담아<br/>
+      축의금을 전달하실 수 있습니다.
+    </p>
 
-  document.getElementById('gdisplay').textContent = Math.floor(score/5);
-}
+    <div class="account__grid">
+      <div class="account__card account__card--full">
+        <p class="account__role">신랑측</p>
+        <p class="account__bank">우리은행</p>
+        <p class="account__number" data-account="1002396940904">
+          <span>1002-396-940904</span>
+          <button type="button" class="account__copy" data-copy="1002396940904" aria-label="신랑 계좌번호 복사">복사</button>
+        </p>
+      </div>
+      <div class="account__card account__card--full">
+        <p class="account__role">신부측</p>
+        <p class="account__bank">케이뱅크</p>
+        <p class="account__number" data-account="100131069461">
+          <span>100-131-069461</span>
+          <button type="button" class="account__copy" data-copy="100131069461" aria-label="신부 계좌번호 복사">복사</button>
+        </p>
+      </div>
+    </div>
+  </section>
 
-function draw() {
-  ctx.clearRect(0,0,W,H);
+  <!-- ============================================== -->
+  <!-- 7. FOOTER                                        -->
+  <!-- ============================================== -->
+  <footer class="footer">
+    <p class="footer__names">JOONHYUK &amp; MIJIN</p>
+    <p class="footer__date">2026 · 10 · 25</p>
+    <button type="button" class="footer__share" id="shareBtn">
+      청첩장 공유하기
+    </button>
+  </footer>
 
-  // sky bg
-  ctx.fillStyle='#1E1C19'; ctx.fillRect(0,0,W,H);
+  <!-- 복사 완료 토스트 -->
+  <div class="toast" id="toast" role="status" aria-live="polite"></div>
 
-  // stars
-  for(let i=0;i<18;i++) {
-    const sx=((i*137+frame*0.4)%W), sy=(i*67)%(GY*0.55);
-    ctx.fillStyle='rgba(255,255,255,.35)'; ctx.fillRect(sx,sy,1.5,1.5);
-  }
-
-  // moving ground dots
-  ctx.fillStyle='#3A3835'; ctx.fillRect(0,GY,W,H-GY);
-  ctx.strokeStyle='#B8956A'; ctx.lineWidth=1;
-  ctx.beginPath(); ctx.moveTo(0,GY); ctx.lineTo(W,GY); ctx.stroke();
-
-  // ground texture dashes
-  ctx.strokeStyle='rgba(184,149,106,.25)'; ctx.lineWidth=1;
-  const dashSpacing=60;
-  const offset=(frame*spd*0.5)%dashSpacing;
-  for(let x=-dashSpacing+offset; x<W+dashSpacing; x+=dashSpacing) {
-    ctx.beginPath(); ctx.moveTo(x,GY+8); ctx.lineTo(x+20,GY+8); ctx.stroke();
-  }
-
-  // obstacles
-  obs.forEach(o => drawCake(o));
-
-  // couple
-  drawCouple();
-
-  // game over overlay
-  if(dead) {
-    ctx.fillStyle='rgba(20,18,15,.85)'; ctx.fillRect(0,0,W,H);
-    ctx.textAlign='center';
-    ctx.fillStyle='#F7F4EF';
-    ctx.font=`${W*0.048}px 'Cormorant Garamond'`;
-    ctx.fillText('Game Over', W/2, H*0.36);
-    ctx.font=`${W*0.036}px 'Cormorant Garamond'`;
-    ctx.fillStyle='#B8956A';
-    ctx.fillText(Math.floor(score/5) + 'm', W/2, H*0.52);
-    ctx.font=`${W*0.026}px 'Noto Sans KR'`;
-    ctx.fillStyle='#A09E99';
-    ctx.fillText('탭하면 다시 시작', W/2, H*0.68);
-    ctx.textAlign='left';
-  }
-}
-
-function drawCake(o) {
-  const {x,y,w,h} = o;
-  const tiers = 3;
-  const baseW = w * 2.2;
-  for(let t=0;t<tiers;t++) {
-    const tw = baseW * (1 - t*0.22);
-    const tx = x + w/2 - tw/2;
-    const ty = y + (h/tiers)*t;
-    const th = h/tiers - 2;
-    const fills = ['#E2DED8','#EDE9E3','#F7F4EF'];
-    ctx.fillStyle = fills[t]; ctx.fillRect(tx,ty,tw,th);
-    ctx.strokeStyle='rgba(184,149,106,.6)'; ctx.lineWidth=0.8; ctx.strokeRect(tx,ty,tw,th);
-  }
-  // candle on top
-  ctx.fillStyle='#B8956A'; ctx.fillRect(x+w/2-2,y-8,4,8);
-  ctx.fillStyle='#F0C040';
-  ctx.beginPath(); ctx.arc(x+w/2,y-9,3,0,Math.PI*2); ctx.fill();
-  // heart topper
-  ctx.fillStyle='#D4537E';
-  ctx.font=`${w*0.9}px serif`;
-  ctx.textAlign='center'; ctx.fillText('♥',x+w/2,y-14); ctx.textAlign='left';
-}
-
-function drawCouple() {
-  const cx = PX();
-  const gnd = py;
-  const w = PW(), h = PH();
-  const lk = pJump ? 0 : Math.sin(legPh)*0.9;
-
-  // ── 신랑 (left) ──
-  const mx = cx - w*0.22;
-  // legs
-  ctx.fillStyle='#2C2C2A';
-  ctx.fillRect(mx-w*0.12, gnd-h*0.30, w*0.09, h*0.30 + lk*5);
-  ctx.fillRect(mx+w*0.03, gnd-h*0.30, w*0.09, h*0.30 - lk*5);
-  // shoes
-  ctx.fillStyle='#111';
-  ctx.fillRect(mx-w*0.14, gnd-3+lk*5, w*0.12, 4);
-  ctx.fillRect(mx+w*0.01, gnd-3-lk*5, w*0.12, 4);
-  // body (suit)
-  ctx.fillStyle='#2C2C2A';
-  roundRect(ctx, mx-w*0.14, gnd-h*0.68, w*0.28, h*0.40, 2);
-  // shirt
-  ctx.fillStyle='#F7F4EF';
-  ctx.fillRect(mx-w*0.06, gnd-h*0.68, w*0.12, h*0.32);
-  // tie
-  ctx.fillStyle='#B8956A';
-  ctx.beginPath(); ctx.moveTo(mx-w*0.02,gnd-h*0.66); ctx.lineTo(mx+w*0.02,gnd-h*0.66); ctx.lineTo(mx,gnd-h*0.40); ctx.closePath(); ctx.fill();
-  // head
-  ctx.fillStyle='#D4A574';
-  ctx.beginPath(); ctx.ellipse(mx, gnd-h*0.78, w*0.12, w*0.14, 0, 0, Math.PI*2); ctx.fill();
-  // hair
-  ctx.fillStyle='#2C2C2A';
-  ctx.beginPath(); ctx.ellipse(mx, gnd-h*0.87, w*0.12, w*0.065, 0, Math.PI, Math.PI*2); ctx.fill();
-  // arm swing
-  ctx.strokeStyle='#2C2C2A'; ctx.lineWidth=w*0.07; ctx.lineCap='round';
-  ctx.beginPath(); ctx.moveTo(mx-w*0.12, gnd-h*0.58); ctx.lineTo(mx-w*0.20, gnd-h*0.42+lk*6); ctx.stroke();
-  ctx.beginPath(); ctx.moveTo(mx+w*0.12, gnd-h*0.58); ctx.lineTo(mx+w*0.20, gnd-h*0.42-lk*6); ctx.stroke();
-
-  // ── 신부 (right) ──
-  const fx = cx + w*0.08;
-  const fleg = pJump ? 0 : Math.sin(legPh+0.4)*0.7;
-  // dress skirt
-  ctx.fillStyle='#F7F4EF';
-  ctx.beginPath(); ctx.moveTo(fx-w*0.05,gnd-h*0.60); ctx.lineTo(fx+w*0.05,gnd-h*0.60); ctx.lineTo(fx+w*0.20,gnd); ctx.lineTo(fx-w*0.20,gnd); ctx.closePath(); ctx.fill();
-  ctx.strokeStyle='rgba(184,149,106,.3)'; ctx.lineWidth=0.5; ctx.stroke();
-  // bodice
-  ctx.fillStyle='#F7F4EF';
-  roundRect(ctx, fx-w*0.10, gnd-h*0.72, w*0.20, h*0.14, 2);
-  // sash
-  ctx.fillStyle='#B8956A'; ctx.fillRect(fx-w*0.10, gnd-h*0.62, w*0.20, h*0.05);
-  // head
-  ctx.fillStyle='#D4A574';
-  ctx.beginPath(); ctx.ellipse(fx, gnd-h*0.82, w*0.11, w*0.13, 0, 0, Math.PI*2); ctx.fill();
-  // veil
-  ctx.fillStyle='rgba(247,244,239,.85)';
-  ctx.beginPath(); ctx.moveTo(fx-w*0.11,gnd-h*0.91); ctx.lineTo(fx+w*0.16,gnd-h*0.91); ctx.lineTo(fx+w*0.20,gnd-h*0.55); ctx.lineTo(fx+w*0.02,gnd-h*0.55); ctx.closePath(); ctx.fill();
-  // hair
-  ctx.fillStyle='#3A3835';
-  ctx.beginPath(); ctx.ellipse(fx, gnd-h*0.91, w*0.11, w*0.06, 0, Math.PI, Math.PI*2); ctx.fill();
-  // bouquet
-  ctx.fillStyle='#D4537E';
-  ctx.beginPath(); ctx.arc(fx+w*0.20, gnd-h*0.55, w*0.065, 0, Math.PI*2); ctx.fill();
-  ctx.fillStyle='#F4C0D1';
-  ctx.beginPath(); ctx.arc(fx+w*0.20, gnd-h*0.55, w*0.04, 0, Math.PI*2); ctx.fill();
-  ctx.fillStyle='#97C459'; ctx.fillRect(fx+w*0.17, gnd-h*0.48, w*0.04, h*0.22);
-
-  // floating heart between them
-  if(!pJump && Math.sin(frame*0.06) > 0.3) {
-    const alpha = (Math.sin(frame*0.06)-0.3)/0.7;
-    ctx.fillStyle=`rgba(184,149,106,${alpha*0.8})`;
-    ctx.font=`${w*0.22}px serif`;
-    ctx.textAlign='center';
-    ctx.fillText('♥', cx-w*0.06, gnd-h*1.05 - Math.sin(frame*0.04)*4);
-    ctx.textAlign='left';
-  }
-}
-
-function roundRect(ctx, x, y, w, h, r) {
-  ctx.beginPath();
-  ctx.moveTo(x+r,y); ctx.lineTo(x+w-r,y); ctx.quadraticCurveTo(x+w,y,x+w,y+r);
-  ctx.lineTo(x+w,y+h-r); ctx.quadraticCurveTo(x+w,y+h,x+w-r,y+h);
-  ctx.lineTo(x+r,y+h); ctx.quadraticCurveTo(x,y+h,x,y+h-r);
-  ctx.lineTo(x,y+r); ctx.quadraticCurveTo(x,y,x+r,y);
-  ctx.closePath(); ctx.fill();
-}
-
-function idle() {
-  resize(); initPlayer();
-  ctx.clearRect(0,0,W,H);
-  ctx.fillStyle='#1E1C19'; ctx.fillRect(0,0,W,H);
-  ctx.fillStyle='#3A3835'; ctx.fillRect(0,GY,W,H-GY);
-  ctx.strokeStyle='#B8956A'; ctx.lineWidth=1;
-  ctx.beginPath(); ctx.moveTo(0,GY); ctx.lineTo(W,GY); ctx.stroke();
-  drawCouple();
-  ctx.fillStyle='rgba(184,149,106,.9)';
-  ctx.font=`${W*0.042}px 'Cormorant Garamond'`;
-  ctx.textAlign='center';
-  ctx.fillText('Couple Run', W/2, H*0.18);
-  ctx.textAlign='left';
-}
-
-function endGame() {
-  running=false;
-  lastScore = Math.floor(score/5);
-  if(lastScore > best) {
-    best=lastScore;
-    localStorage.setItem('wbest', best);
-    document.getElementById('gbest').textContent = best;
-  }
-  document.getElementById('gbtnEl').textContent = '다시 시작';
-  document.getElementById('rank-sec').style.display='block';
-  document.getElementById('gtip').textContent = '이름을 등록하고 랭킹에 남겨보세요!';
-  renderRank();
-  canvas.addEventListener('click', ()=>startGame(), {once:true});
-  canvas.addEventListener('touchstart', ()=>startGame(), {once:true, passive:true});
-}
-
-function saveRank() {
-  const name = document.getElementById('ri').value.trim();
-  if(!name) return;
-  rankings.push({name, score:lastScore});
-  rankings.sort((a,b)=>b.score-a.score);
-  rankings = rankings.slice(0,10);
-  localStorage.setItem('wrank', JSON.stringify(rankings));
-  document.getElementById('ri').value='';
-  renderRank();
-}
-
-function renderRank() {
-  const el = document.getElementById('rlist');
-  if(!rankings.length){ el.innerHTML='<div class="rempty">아직 등록된 기록이 없습니다</div>'; return; }
-  const cls=['g','s','b'];
-  el.innerHTML = rankings.map((r,i)=>
-    `<div class="rank-item"><div class="rnum ${cls[i]||''}">${i+1}</div><div class="rname">${r.name}</div><div class="rscore">${r.score}m</div></div>`
-  ).join('');
-}
-
-idle();
-renderRank();
-</script>
+  <script src="script.js"></script>
 </body>
 </html>
